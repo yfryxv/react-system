@@ -1,116 +1,106 @@
 /* App.css */
 body {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
-    background-color: #ffffff;
-    color: #333;
-  }
-  
-  .app {
-    display: flex;
-    font-family: Arial, sans-serif;
-  }
-  
-  .sidebar {
-    width: 250px;
-    padding: 20px;
-    background-color: #f8f8f8;
-    border-right: 1px solid #ddd;
-  }
-  
-  .sidebar h3 {
-    font-size: 1.2em;
-    color: #333;
-    margin-bottom: 15px;
-  }
-  
-  .sidebar ul {
-    list-style: none;
-    padding: 0;
-  }
-  
-  .sidebar li {
-    margin-bottom: 10px;
-  }
-  
-  .sidebar li a {
-    text-decoration: none;
-    color: #007bff;
-    font-weight: bold;
-  }
-  
-  .sidebar li a:hover {
-    text-decoration: underline;
-  }
-  
-  .documentation {
-    padding: 20px;
-    flex: 1;
-    text-align: left; /* Asegura que todo el contenido esté alineado a la izquierda */
-  }
-  
-  .documentation h2 {
-    font-size: 1.5em;
-    color: #333;
-    margin-bottom: 10px;
-  }
-  
-  .documentation h3 {
-    font-size: 1.2em;
-    color: #555;
-    margin-top: 20px;
-    margin-bottom: 10px;
-  }
-  
-  .documentation ul {
-    list-style-type: disc;
-    margin-left: 20px;
-    padding-left: 20px; /* Alinea correctamente las listas */
-  }
-  
-  .documentation .method {
-    display: inline-block;
-    background-color: #4caf50;
-    color: white;
-    padding: 3px 8px;
-    border-radius: 4px;
-    font-size: 0.9em;
-    margin-right: 8px;
-  }
-  
-  .documentation table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 10px;
-    font-size: 0.9em;
-  }
-  
-  .documentation th,
-  .documentation td {
-    border: 1px solid #ddd;
-    padding: 10px;
-    text-align: left;
-  }
-  
-  .documentation th {
-    background-color: #f2f2f2;
-    color: #333;
-  }
-  
-  .documentation pre {
-    background-color: #f4f4f4;
-    padding: 15px;
-    border-radius: 5px;
-    margin-top: 10px;
-    font-size: 0.9em;
-    color: #333;
-  }
-  
-  .consideraciones {
-    text-align: left; /* Alineación a la izquierda para la sección de consideraciones */
-    margin-top: 10px;
-    margin-bottom: 10px;
-    color: #333;
-  }
-  
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #ffffff;
+  color: #333;
+}
+
+.app {
+  display: flex;
+  font-family: Arial, sans-serif;
+}
+
+.sidebar {
+  width: 250px;
+  padding: 20px;
+  background-color: #4e75f5;
+  border-right: 1px solid #ddd;
+}
+
+.sidebar h3 {
+  font-size: 1.2em;
+  color: #ffffff;
+  margin-bottom: 15px;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar li {
+  margin-bottom: 10px;
+}
+
+.sidebar li a {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.sidebar li a:hover {
+  text-decoration: underline;
+}
+
+.documentation {
+  padding: 20px;
+  flex: 1;
+  text-align: left;
+}
+.documentation h2 {
+  font-size: 1.5em;
+  color: #333;
+  margin-bottom: 10px;
+} 
+.documentation h3 {
+  font-size: 1.2em;
+  color: #555;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+.documentation ul {
+  list-style-type: disc;
+  margin-left: 20px;
+  padding-left: 20px;
+}  
+.documentation .method {
+  display: inline-block;
+  background-color: #4caf50;
+  color: white;
+  padding: 3px 8px;
+  border-radius: 4px;
+  font-size: 0.9em;
+  margin-right: 8px;
+}  
+.documentation table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+  font-size: 0.9em;
+}  
+.documentation th,
+.documentation td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: left;
+}
+.documentation th {
+  background-color: #f2f2f2;
+  color: #333;
+}
+.documentation pre {
+  background-color: #f4f4f4;
+  padding: 15px;
+  border-radius: 5px;
+  margin-top: 10px;
+  font-size: 0.9em;
+  color: #333;
+}
+.consideraciones {
+  text-align: left; 
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color: #333;
+}

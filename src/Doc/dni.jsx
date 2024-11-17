@@ -1,5 +1,5 @@
-import React from 'react';
-import './App.css';
+import React from "react";
+import "./App.css";
 
 function App() {
   return (
@@ -7,8 +7,15 @@ function App() {
       <aside className="sidebar">
         <h3>ENDPOINTS</h3>
         <ul>
-          <li><a href="#consulta-dni">Consulta DNI</a></li>
-          <li><a href="#consulta-ruc">Consulta RUC</a></li>
+          <li>
+            <a href="#consulta-dni">Consulta DNI</a>
+          </li>
+          <li>
+            <a href="#consulta-ruc">Consulta RUC</a>
+          </li>
+          <li>
+            <a href="#consulta-ruc">Consulta Tipo de Cambio</a>
+          </li>
           {/* Agrega más enlaces según sea necesario */}
         </ul>
       </aside>
@@ -19,14 +26,23 @@ function App() {
           <h3>Consideraciones</h3>
           <ul>
             <li>Este servicio no se conecta con RENIEC.</li>
-            <li>El origen de datos depende del padrón reducido SUNAT y otras fuentes públicas.</li>
-            <li>El padrón reducido SUNAT no devuelve datos de menores de edad, dirección, etc.</li>
+            <li>
+              El origen de datos depende del padrón reducido SUNAT y otras
+              fuentes públicas.
+            </li>
+            <li>
+              El padrón reducido SUNAT no devuelve datos de menores de edad,
+              dirección, etc.
+            </li>
           </ul>
         </section>
 
         <section>
           <h3>Consulta DNI</h3>
-          <p><span className="method">POST</span>http://localhost:8080/api/search/1/dni</p>
+          <p>
+            <span className="method">POST</span>
+            http://localhost:8080/api/search/1/dni
+          </p>
 
           <h4>Headers</h4>
           <table>
@@ -55,7 +71,6 @@ function App() {
               </tr>
             </tbody>
           </table>
-
           <h4>Body</h4>
           <table>
             <thead>
@@ -73,7 +88,6 @@ function App() {
               </tr>
             </tbody>
           </table>
-
           <h4>Respuesta 200</h4>
           <pre>
             {`

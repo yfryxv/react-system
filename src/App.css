@@ -1,42 +1,76 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+/* App.css */
+.app {
+  display: flex;
+  font-family: Arial, sans-serif;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.sidebar {
+  width: 200px;
+  padding: 20px;
+  background-color: #f8f8f8;
+  border-right: 1px solid #ddd;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.sidebar h3 {
+  font-size: 1.2em;
+  color: #333;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.sidebar ul {
+  list-style: none;
+  padding: 0;
 }
 
-.card {
-  padding: 2em;
+.sidebar li a {
+  text-decoration: none;
+  color: #007bff;
 }
 
-.read-the-docs {
-  color: #888;
+.documentation {
+  padding: 20px;
+  flex: 1;
+}
+
+.documentation h2 {
+  font-size: 1.5em;
+  color: #333;
+}
+
+.documentation h3 {
+  font-size: 1.2em;
+  color: #555;
+}
+
+.documentation .method {
+  display: inline-block;
+  background-color: #4caf50;
+  color: white;
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-size: 0.9em;
+}
+
+.documentation table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+.documentation th, .documentation td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+.documentation th {
+  background-color: #f2f2f2;
+  color: #333;
+}
+
+.documentation pre {
+  background-color: #f4f4f4;
+  padding: 10px;
+  border-radius: 5px;
+  margin-top: 10px;
+  font-size: 0.9em;
 }
