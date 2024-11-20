@@ -1,5 +1,9 @@
+<<<<<<< HEAD
 import React from 'react';
+import 'styles/dni.css';
+=======
 import './App.css';
+>>>>>>> e5e15e6e7f8e058b66effd897e409d490b252401
 
 function App() {
   return (
@@ -9,7 +13,6 @@ function App() {
         <ul>
           <li><a href="#consulta-dni">Consulta DNI</a></li>
           <li><a href="#consulta-ruc">Consulta RUC</a></li>
-          {/* Agrega más enlaces según sea necesario */}
         </ul>
       </aside>
 
