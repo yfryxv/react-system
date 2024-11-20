@@ -1,5 +1,5 @@
 import React from 'react';
-import './App.css';
+import 'styles/dni.css';
 
 function App() {
   return (
@@ -9,7 +9,6 @@ function App() {
         <ul>
           <li><a href="#consulta-dni">Consulta DNI</a></li>
           <li><a href="#consulta-ruc">Consulta RUC</a></li>
-          {/* Agrega más enlaces según sea necesario */}
         </ul>
       </aside>
 

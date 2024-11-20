@@ -1,36 +1,50 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import React from "react";
+import "./App.css";
 
-function App() {
-  const [count, setCount] = useState(0)
+const Sidebar = () => (
+  <nav className="sidebar">
+    <div className="menu">
+      <span className="menu-icon">&#9776;</span>
+      <ul>
+        <li><a href="#">INICIO</a></li>
+        <li><a href="/Page/dni">PANEL</a></li>
+        <li><a href="#">TOKEN</a></li>
+        <li><a href="#">DOCUMENTACIÓN</a></li>
+      </ul>
+    </div>
+  </nav>
+);
 
-  return (
-    <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
-}
+const Content = () => (
+  <main className="content">
+    <h1>INICIO</h1>
+    <div className="notice">
+      <p>Te sugerimos usar clientes REST como Postman e Insomnia para probar tus APIs sin la complicación de codificar.</p>
+    </div>
+    <div className="download">
+      <button>ApiPeruDevExport.postman_collection.zip</button>
+    </div>
+    <p className="token-instruction">
+      Actualiza el <span className="highlight">{"token"}</span> en la sección correspondiente de variables.
+    </p>
+    <div className="next-section">
+      <button>Consulta DNI</button>
+    </div>
+    <Footer />
+  </main>
+);
 
-export default App
+const Footer = () => (
+  <footer className="footer">
+    <p>Última actualización hace un mes</p>
+  </footer>
+);
 
+const App = () => (
+  <div className="container">
+    <Sidebar />
+    <Content />
+  </div>
+);
+
+export default App;
