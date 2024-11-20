@@ -71,7 +71,6 @@ function App() {
               </tr>
             </tbody>
           </table>
-
           <h4>Body</h4>
           <table>
             <thead>
@@ -89,7 +88,6 @@ function App() {
               </tr>
             </tbody>
           </table>
-
           <h4>Respuesta 200</h4>
           <pre>
             {`
