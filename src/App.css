@@ -1,5 +1,6 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 
@@ -10,10 +11,14 @@
   padding: 2rem;
   text-align: center;
 =======
+=======
+/* App.css */
+>>>>>>> alejandro
 body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
+<<<<<<< HEAD
   background-color: #f8f9fa;
 >>>>>>> alejandro
 }
@@ -27,98 +32,96 @@ body {
   width: 250px;
   background-color: #2d3b59;
   color: white;
+=======
+>>>>>>> alejandro
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #f8fbe8;
 }
 
-.sidebar .menu {
-  padding: 10px;
-}
-
-.menu-icon {
-  font-size: 24px;
-  cursor: pointer;
-  margin-bottom: 20px;
-  display: block;
-}
-
-.sidebar ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.sidebar ul li {
-  margin: 15px 0;
-}
-
-.sidebar ul li a {
+/* Logo */
+.logo {
+  background-color: #2b76ff;
   color: white;
-  text-decoration: none;
-  font-size: 16px;
+  font-weight: bold;
+  font-size: 18px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  position: absolute;
+  top: 20px;
+  left: 20px;
 }
 
-.sidebar ul li a:hover {
-  text-decoration: underline;
+/* Contenedor principal */
+.container {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  width: 100%;
+  max-width: 1000px;
+  margin: 20px;
 }
 
-.content {
-  flex: 1;
+/* Formulario común */
+.form {
+  background-color: #ffffff;
   padding: 20px;
-  background-color: #fefefe;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  text-align: center;
 }
 
 h1 {
-  color: #1f83e1;
   font-size: 24px;
+  margin: 10px 0;
 }
 
-.notice {
-  background-color: #eef6fc;
-  border-left: 4px solid #1f83e1;
-  padding: 15px;
-  margin-bottom: 20px;
-}
-
-.download button {
-  background-color: #f9f9f9;
-  border: 1px solid #ddd;
-  padding: 10px 15px;
-  cursor: pointer;
+p {
   font-size: 14px;
-  margin-bottom: 20px;
+  color: #666;
 }
 
-.download button:hover {
-  background-color: #eef6fc;
+input[type="text"], input[type="email"], input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
 }
 
-.token-instruction {
-  color: #333;
-  font-size: 14px;
-  margin: 20px 0;
-}
-
-.highlight {
-  color: red;
-  font-weight: bold;
-}
-
-.next-section button {
-  background-color: #1f83e1;
+button {
+  background-color: #4caf50;
   color: white;
+  padding: 10px;
   border: none;
-  padding: 10px 15px;
+  border-radius: 5px;
   cursor: pointer;
+  width: 100%;
   font-size: 16px;
 }
 
-.next-section button:hover {
-  background-color: #166bb7;
+button:hover {
+  background-color: #45a049;
 }
 
-.footer {
-  font-size: 12px;
-  color: #999;
+a {
+  display: block;
+  margin-top: 15px;
+  font-size: 14px;
+  color: #333;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+footer {
   margin-top: 20px;
+  font-size: 12px;
+  color: #888;
 }
