@@ -9,10 +9,10 @@ body {
     justify-content: center;
     height: 100vh;
     background-color: #f8fbe8;
-}
-
-/* Logo */
-.logo {
+  }
+  
+  /* Logo */
+  .logo {
     background-color: #2b76ff;
     color: white;
     font-weight: bold;
@@ -22,47 +22,47 @@ body {
     position: absolute;
     top: 20px;
     left: 20px;
-}
-
-/* Contenedor principal */
-.container {
+  }
+  
+  /* Contenedor principal */
+  .container {
     display: flex;
     justify-content: center;
     gap: 40px;
     width: 100%;
     max-width: 1000px;
     margin: 20px;
-}
-
-/* Formulario común */
-.form {
+  }
+  
+  /* Formulario común */
+  .form {
     background-color: #ffffff;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     width: 300px;
     text-align: center;
-}
-
-h1 {
+  }
+  
+  h1 {
     font-size: 24px;
     margin: 10px 0;
-}
-
-p {
+  }
+  
+  p {
     font-size: 14px;
     color: #666;
-}
-
-input[type="text"], input[type="email"], input[type="password"] {
+  }
+  
+  input[type="text"], input[type="email"], input[type="password"] {
     width: 100%;
     padding: 10px;
     margin: 10px 0;
     border: 1px solid #ccc;
     border-radius: 5px;
-}
-
-button {
+  }
+  
+  button {
     background-color: #4caf50;
     color: white;
     padding: 10px;
@@ -71,26 +71,26 @@ button {
     cursor: pointer;
     width: 100%;
     font-size: 16px;
-}
-
-button:hover {
+  }
+  
+  button:hover {
     background-color: #45a049;
-}
-
-a {
+  }
+  
+  a {
     display: block;
     margin-top: 15px;
     font-size: 14px;
     color: #333;
     text-decoration: none;
-}
-
-a:hover {
+  }
+  
+  a:hover {
     text-decoration: underline;
-}
-
-footer {
+  }
+  
+  footer {
     margin-top: 20px;
     font-size: 12px;
     color: #888;
-}
+  }
