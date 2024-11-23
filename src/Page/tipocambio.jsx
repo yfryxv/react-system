@@ -1,9 +1,8 @@
-<<<<<<< HEAD
 import React from 'react';
 import 'styles/login.css';
-=======
+
 import './App.css';
->>>>>>> e5e15e6e7f8e058b66effd897e409d490b252401
+
 
 function App() {
   return (
