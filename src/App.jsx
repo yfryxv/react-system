@@ -1,50 +1,26 @@
-import React from "react";
-import "./App.css";
+import React from 'react';
+import './Footer.css';
 
-const Sidebar = () => (
-  <nav className="sidebar">
-    <div className="menu">
-      <span className="menu-icon">&#9776;</span>
-      <ul>
-        <li><a href="#">INICIO</a></li>
-        <li><a href="/Page/dni">PANEL</a></li>
-        <li><a href="#">TOKEN</a></li>
-        <li><a href="#">DOCUMENTACIÓN</a></li>
-      </ul>
-    </div>
-  </nav>
-);
+function Footer() {
+  return (
+    <footer className="footer">
+      <div className="footer-container">
+        <div className="footer-column">
+          <h3>Contáctenos</h3>
+          <p>Correo electrónico: apiperu@esolutions.dev</p>
+          <p>Celular: 947 299 925</p>
+        </div>
+        <div className="footer-column">
+          <h3>Términos</h3>
+          <p>Términos y condiciones</p>
+          <p>Política de privacidad</p>
+        </div>
+      </div>
+      <div className="footer-bottom">
+        <p>© 2024 ApiPerúDev. Todos los derechos reservados.</p>
+      </div>
+    </footer>
+  );
+}
 
-const Content = () => (
-  <main className="content">
-    <h1>INICIO</h1>
-    <div className="notice">
-      <p>Te sugerimos usar clientes REST como Postman e Insomnia para probar tus APIs sin la complicación de codificar.</p>
-    </div>
-    <div className="download">
-      <button>ApiPeruDevExport.postman_collection.zip</button>
-    </div>
-    <p className="token-instruction">
-      Actualiza el <span className="highlight">{"token"}</span> en la sección correspondiente de variables.
-    </p>
-    <div className="next-section">
-      <button>Consulta DNI</button>
-    </div>
-    <Footer />
-  </main>
-);
-
-const Footer = () => (
-  <footer className="footer">
-    <p>Última actualización hace un mes</p>
-  </footer>
-);
-
-const App = () => (
-  <div className="container">
-    <Sidebar />
-    <Content />
-  </div>
-);
-
-export default App;
+export default Footer;
