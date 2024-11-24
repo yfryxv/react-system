@@ -3,13 +3,12 @@ import './App.css';
 
 function App() {
   return (
-    <div>
+    <div className="App">
       {/* Logo */}
       <div className="logo">APIS FYP</div>
 
       {/* Contenedor de formularios */}
       <div className="container">
-
         {/* Formulario de Registro */}
         <div className="form">
           <h1>Registro</h1>
@@ -20,7 +19,6 @@ function App() {
             <input type="password" placeholder="CONTRASEÑA" required />
             <button type="submit">Registrarse</button>
           </form>
-          <a href="#">¿Ya tienes una cuenta? Inicia sesión</a>
         </div>
 
         {/* Formulario de Inicio de Sesión */}
@@ -31,16 +29,29 @@ function App() {
             <input type="password" placeholder="CONTRASEÑA" required />
             <button type="submit">Iniciar Sesión</button>
           </form>
-          <a href="#">¿No tienes cuenta? Regístrate</a>
         </div>
-
       </div>
 
       {/* Pie de página */}
-      <footer>© 2024 APIS FYP. Todos los derechos reservados.</footer>
+      <footer className="footer">
+        <div className="footer-container">
+          <div className="footer-column">
+            <h3>Contáctenos</h3>
+            <p>Correo electrónico: apiperu@esolutions.dev</p>
+            <p>Celular: 947 299 925</p>
+          </div>
+          <div className="footer-column">
+            <h3>Términos</h3>
+            <p><a href="#" className="footer-link">Términos y condiciones</a></p>
+            <p><a href="#" className="footer-link">Política de privacidad</a></p>
+          </div>
+        </div>
+        <div className="footer-bottom">
+          <p>© 2024 ApiPerúDev. Todos los derechos reservados.</p>
+        </div>
+      </footer>
     </div>
   );
 }
 
 export default App;
-
